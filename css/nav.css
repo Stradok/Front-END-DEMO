@@ -1,0 +1,38 @@
+/* Shared nav: links, Products dropdown, mobile menu. Used by the home page and every generated page. */
+.nv-links { display: none; align-items: center; gap: 2.25rem; }
+.nv-links > a, .nv-dd-btn { font: 500 .875rem/1.2 'Manrope', system-ui, sans-serif; color: #a1a1aa; background: none; border: 0; padding: 0; cursor: pointer; transition: color .15s; }
+.nv-links > a:hover, .nv-dd-btn:hover, .nv-dd-btn[aria-expanded="true"] { color: #fff; }
+.nv-dd { position: relative; }
+.nv-dd-btn { display: inline-flex; align-items: center; gap: .4rem; }
+.nv-dd-btn svg { transition: transform .15s; }
+.nv-dd-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
+.nv-dd-panel { position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%); min-width: 13rem; margin: 0; padding: .4rem; list-style: none;
+  background: #121214; border: 1px solid rgba(255, 255, 255, .1); border-radius: 1rem; box-shadow: 0 18px 40px rgba(0, 0, 0, .5); z-index: 60; }
+.nv-dd-panel[hidden] { display: none; }
+.nv-dd-panel a, .nv-soon { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .6rem .8rem; border-radius: .65rem;
+  font: 500 .875rem/1.2 'Manrope', system-ui, sans-serif; color: #d4d4d8; text-decoration: none; }
+.nv-dd-panel a:hover { background: rgba(255, 255, 255, .06); color: #fff; }
+.nv-soon { color: #71717a; cursor: default; }
+.nv-soon small { font-size: .65rem; letter-spacing: .1em; text-transform: uppercase; border: 1px solid rgba(255, 255, 255, .12); border-radius: 999px; padding: .1rem .5rem; }
+.nv-sep { margin-top: .3rem; padding-top: .3rem; border-top: 1px solid rgba(255, 255, 255, .08); }
+.nv :focus-visible, .nv-links :focus-visible, .nv-mobile :focus-visible, .nv-menu-btn:focus-visible { outline: 2px solid #ef233c; outline-offset: 3px; border-radius: 6px; }
+
+.nv-menu-btn { display: inline-flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; margin-left: .5rem; border-radius: 999px;
+  color: #fff; background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .1); cursor: pointer; }
+.nv-mobile { position: absolute; top: 100%; left: 0; right: 0; display: flex; flex-direction: column; gap: .15rem; padding: .75rem 1.5rem 1.25rem;
+  background: #0a0a0b; border-bottom: 1px solid rgba(255, 255, 255, .1); max-height: calc(100dvh - 4.5rem); overflow-y: auto; z-index: 60; }
+.nv-mobile[hidden] { display: none; }
+.nv-mobile > a, .nv-sub-btn { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: .85rem 0; text-align: left;
+  font: 500 1rem/1.2 'Manrope', system-ui, sans-serif; color: #e4e4e7; background: none; border: 0; border-bottom: 1px solid rgba(255, 255, 255, .06); cursor: pointer; text-decoration: none; }
+.nv-sub { margin: 0; padding: .25rem 0 .5rem 1rem; list-style: none; }
+.nv-sub[hidden] { display: none; }
+.nv-sub a, .nv-sub .nv-soon { display: flex; justify-content: space-between; padding: .65rem 0; font: 500 .95rem/1.2 'Manrope', system-ui, sans-serif; color: #c4c4cc; text-decoration: none; }
+.nv-mobile .nv-book { margin-top: .9rem; justify-content: center; border: 0; border-radius: 999px; background: #ef233c; color: #fff; font-weight: 700; font-size: .85rem; letter-spacing: .06em; text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  .nv-links { display: flex; }
+  .nv-menu-btn, .nv-mobile { display: none !important; }
+}
+@media (max-width: 767px) {
+  .nv-book-d { margin-left: auto; }
+}

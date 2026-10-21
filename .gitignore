@@ -1,0 +1,8 @@
+node_modules/
+.vercel
+.env
+.env.local
+Login_credentials.md
+Company/
+__pycache__/
+livekit.md

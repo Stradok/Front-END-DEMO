@@ -1,0 +1,66 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/products/crm/hvac/portal/track/:id",
+      "destination": "/products/crm/hvac/portal/track/record.html"
+    },
+    {
+      "source": "/products/crm/hvac/tech/job/:id",
+      "destination": "/products/crm/hvac/tech/job/record.html"
+    },
+    {
+      "source": "/products/crm/hvac/jobs/:id",
+      "destination": "/products/crm/hvac/jobs/record.html"
+    },
+    {
+      "source": "/products/crm/hvac/estimates/:id",
+      "destination": "/products/crm/hvac/estimates/record.html"
+    },
+    {
+      "source": "/products/crm/hvac/customers/:id",
+      "destination": "/products/crm/hvac/customers/record.html"
+    },
+    {
+      "source": "/products/crm/hvac/calls/:id",
+      "destination": "/products/crm/hvac/calls/record.html"
+    },
+    {
+      "source": "/products/erp/distribution/suppliers/:id",
+      "destination": "/products/erp/distribution/suppliers/record.html"
+    },
+    {
+      "source": "/products/erp/distribution/sales/shipments/:id",
+      "destination": "/products/erp/distribution/sales/shipments/record.html"
+    },
+    {
+      "source": "/products/erp/distribution/sales/orders/:id",
+      "destination": "/products/erp/distribution/sales/orders/record.html"
+    },
+    {
+      "source": "/products/erp/distribution/sales/invoices/:id",
+      "destination": "/products/erp/distribution/sales/invoices/record.html"
+    },
+    {
+      "source": "/products/erp/distribution/reports/:id",
+      "destination": "/products/erp/distribution/reports/record.html"
+    },
+    {
+      "source": "/products/erp/distribution/purchasing/orders/:id",
+      "destination": "/products/erp/distribution/purchasing/orders/record.html"
+    },
+    {
+      "source": "/products/erp/distribution/purchasing/bills/:id",
+      "destination": "/products/erp/distribution/purchasing/bills/record.html"
+    },
+    {
+      "source": "/products/erp/distribution/inventory/:id",
+      "destination": "/products/erp/distribution/inventory/record.html"
+    },
+    {
+      "source": "/products/erp/distribution/customers/:id",
+      "destination": "/products/erp/distribution/customers/record.html"
+    }
+  ]
+}
